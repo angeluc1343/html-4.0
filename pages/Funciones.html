@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <h1>Funciones Js</h1>
+    <button onclick="perro();">click me</button>
+    <button value="blue" onclick="changecolor(value)">blue</button>
+    <script>
+        const changecolor = (color) =>{
+            document.body.style.backgroundColor = color;
+        }
+        //Declarar nuestra función
+        function saludar() {
+            //código
+            console.log("hola");
+        }
+
+        //Funciones que retornan
+        const saludar3 = (nombre, edad, estado) =>{
+            return `Hola mi nombre es ${nombre}, tengo ${edad} y soy de ${estado}`
+        }
+        console.log( saludar3('mario', 25, 'Veracruz') );
+
+        const saludar2 = () =>{
+            return "hola";
+        }
+        const suma = (num1, num2) =>{
+            return num1 + num2
+        }
+        let resultadosuma = suma( 10, 5 );
+        console.log(resultadosuma);
+
+        console.log( saludar2()  );
+
+        //Funciones de flecha / arrow functions
+        const despedida = () =>{
+            console.log("adios");
+        }
+
+        const perro = () =>{
+            alert("me clickeaste!");
+        }
+
+        //Función con parametro
+        const cocinar = ( comida ) =>{
+            console.log( "hoy estoy cocinando" + comida );
+        }
+
+        //crear               parametro
+        const saludaramigo = ( saludo, amigo ) =>{
+            console.log( saludo, amigo );
+        }
+
+        //Parametros con valor por defecto
+        const despedidaAmigo = (despedida="hasta luego",amigo="chabelo") =>{
+            console.log( despedida, amigo );
+        }
+
+        //Llamar a la función
+        //Llamar       argumentos
+        //saludaramigo("buenos dias"  , "denisse");
+        /* cocinar( "pizza" ) */
+/*         saludar();
+        despedida(); */
+        despedidaAmigo("adiós, amigo")
+
+    </script>
+</body>
+</html>

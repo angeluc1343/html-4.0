@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos js</title>
+</head>
+<body>
+    <h1>Arreglos Js</h1>
+
+    <script>
+        //Declaramos un arreglo
+        //posición:         0          1          2
+        let cajonera = ['camisas', 'tortas', 'refresco']; //Tamaño 3
+
+        //Obtener valor especifico
+        console.log( cajonera[1]  );
+
+        //Modificar un valor de un arreglo
+        cajonera[2] = 'Coca';
+        console.log(cajonera);
+
+        //Tamaño de mi arreglo
+        console.log("El tamaño de la cajonera" + cajonera.length );
+        
+        //Agregar un nuevo elemento al arreglo
+        cajonera.push("plato");
+        console.log(cajonera);
+
+        //Eliminar elementos
+        //Pop() elimina el ultimo elemento
+        cajonera.pop();
+        cajonera.shift();
+        console.log(cajonera);
+
+
+
+        //Bucle for
+        console.log("Aqui empieza el bucle");
+        let estado = 0;
+        //Estado_inicial; condición; siguiente-estado
+        /*for( estado; estado < 3 ; estado ++ ){
+            console.log("hola chicos");
+        }
+        console.log("Fin del bucle");
+        */
+
+        console.log(cajonera);
+        let memoria = 0;
+        let tamano = cajonera.length; // 2
+        //                     0          1     
+        // cajonera = ['pantalones', 'calcetas'];
+        for( memoria; memoria < tamano ; memoria ++){
+        console.log( cajonera[memoria] );
+       }
+
+    </script>
+</body>
+</html>
