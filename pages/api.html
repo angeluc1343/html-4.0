@@ -4,35 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Api</title>
+    <link rel="stylesheet" href="../style/api.css">
+    <!-- ESTILOS DE LETRA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,200&display=swap" rel="stylesheet">
+    <!-- FIN DE ESTILOS DE LETRA -->
+
+    <!---ICON-->
+    <link rel="shortcut icon" href="../src/pokeball.jpg" type="image/x-icon">
+    <!---END: ICON-->
+
+    <script src="https://kit.fontawesome.com/8c5c151594.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    <h1>     <!---Barra de navegación-->
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a href="./api.html"><img src="../src/Api.png" alt="api"></a>
+                </li>
+                <li class="items-nav">
+                    <a class="items-menu nav-link btn-neon" href="./api.html">
+                        <span id="span1"></span>
+                        INICIO
+                    </a>
+                </li>
+                <li class="items-nav">
+                    <a class="items-menu nav-link btn-neon2" href="../index.html">
+                        PÁGINAS
+                    </a>
+                </li>
+                <li class="items-nav">
+                    <a class="items-menu nav-link btn-neon3" href="./Trabajos.html">
+                        TRABAJOS
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!---Cierre de barra de navegación-->
+    </h1>
+    <h1 class="subtitulo_2">
     
-    <script>
-        const datos = {
-            //Llave   Valor
-            "Nombre": "Angel",
-            "Apellido": "Uc",
-            "Colores": ['Verde', 'Rojo'],
-            "Numeros":{
-                "Num1": 1,
-                "Num2": 2
-            }
-        }
+        <p class="parrafo">Escriba un número o nombre del Pokemon que busca:</p>
+    
+        <form action="/" onsubmit="searchPokemon(event)">
+        <input type="text" name="pokemon" autocomplete="off">
+        </form>
+        <div data-poke-card class="poke-card">
+            <div data-poke-name>PokéDex</div>
+            <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="../src/pokemon.png" alt="Pokemon">
+            </div>
+            <div data-poke-id></div>
+            <div data-poke-types class="poke-types"></div>
+            <div data-poke-stats class="poke-stats"></div>
+        </div>
+        <p class="hi">ㅤㅤ</p>      
+    </h1>
 
-        console.log( datos );
-        let url = "";
-        fetch(url).then( (respuesta)=>{
-            return respuesta.json();
-        }).then( (datos)=>{
+    <h2 class="subtitulo_3">
+    <div class="box-footer" >
+        <h2>
+            <h4>
+                REDES SOCIALES
+        <li style="list-style-type: none;"><a href="#"><i class="fab fa-instagram-square"></i> INSTAGRAM</a></li>
+        <li style="list-style-type: none;"><a href="#"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+        <li style="list-style-type: none;"><a href="#"><i class="fab fa-twitch"></i> TWITCH</a></li>
+        <li style="list-style-type: none;"><a href="#"><i class="fab fa-youtube"></i> YOUTUBE</a></li>
+        <li style="list-style-type: none;"><a href="#"><i class="fab fa-discord"></i> DISCORD</a></li>
+            </h4>
 
-            let titulo = document.querySelector('titulo');
-            titulo.innerHTML= datos.name
+            <h3 class="verticalLine">
+                COMPAÑIA
+                <li style="list-style-type: none;"><a href="#">ACERCA.</a></li>
+                <li style="list-style-type: none;"><a href="../index.html">TRABAJOS.</a></li>
+                <li style="list-style-type: none;"><a href="#">SERVICIOS.</a></li>
+            </h3>
 
-        })
-        .catch( ()=>{
-            alert()
-        });
-    </script>
+            <h5 class="verticalLine">
+                <p>Este proyecto fue elaborado con ayuda de Fernando Hernández Nava como profesor del alumno
+                    Angel Sebastian uc Valle durante el curso de Programación Web.
+                </p>
+                <p>Todos los derechos reservados © 2021</p>
+                <p>© Api.com</p>
+            </h5>
+        </h2>
+    </div>
+    </h2>
+
+    <script src="../Js/api.js"></script>
 </body>
 </html>

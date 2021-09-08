@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/api2.css">
+    <title>¡Hola mundo!</title>
+     <!-- ESTILOS DE LETRA -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,200&display=swap" rel="stylesheet">
+     <!-- FIN DE ESTILOS DE LETRA -->
+
+     <!---ICON-->
+     <link rel="shortcut icon" href="../src/pokebola.png" type="image/x-icon">
+     <!---END: ICON-->
+
+     <script src="https://kit.fontawesome.com/8c5c151594.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>    
+
+    <header class="header">
+        <img id="logo" src="../src/pokeball.jpg" alt="logo">
+        <h1>¡PokéDex!</h1>
+    </header>
+
+    <!---Barra de navegación-->
+    <nav>
+        <ul class="nav">
+            <li class="items-nav">
+                <a class="items-menu nav-link btn-neon" href="../page/index.html">
+                    <span id="span1"></span>
+                    INICIO
+                </a>
+            </li>
+            <li class="items-nav">
+                <a class="items-menu nav-link btn-neon2" href="../index.html">
+                    PÁGINAS
+                </a>
+            </li>
+            <li class="items-nav">
+                <a class="items-menu nav-link btn-neon3" href="#">
+                    ACERCA
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!---Cierre de barra de navegación-->
+
+    <p class="parrafo">Escriba un número o nombre del Pokemon que busca:</p>
+
+    <form action="/" onsubmit="searchPokemon(event)">
+    <input type="text" name="pokemon" autocomplete="off">
+    </form>
+    <div data-poke-card class="poke-card">
+        <div data-poke-name>PokéDex</div>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="../src/pokemon.png" alt="Pokemon">
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+    </div>
+    <p class="hi">ㅤㅤ</p>
+    <!--INICIO: FOOTER-->
+    <footer>
+
+        <div class="contenido-footer">
+            <div class="box-footer">
+                <div class="img">
+                    <img src="../src/POKEDEX.png" alt="LOGO">
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo voluptatem delectus neque veniam, nostrum sequi? Voluptatibus natus eaque, numquam nihil modi, possimus aperiam iusto vel blanditiis suscipit perferendis fugit rem!</p>
+                </div>
+            </div>
+            <div class="box-footer">
+                <h2>COMPAÑIA</h2>
+                <a href="#">ACERCA.</a>
+                <a href="../index.html">TRABAJOS.</a>
+                <a href="#">SERVICIOS.</a>
+            </div>
+            <div class="box-footer">
+                <h2>REDES SOCIALES.</h2>
+                <a href="#"><i class="fab fa-instagram-square"></i> INSTAGRAM</a>
+                <a href="#"><i class="fab fa-facebook"></i> FACEBOOK</a>
+                <a href="#"><i class="fab fa-twitch"></i> TWITCH</a>
+                <a href="#"><i class="fab fa-youtube"></i> YOUTUBE</a>
+                <a href="#"><i class="fab fa-discord"></i> DISCORD</a>
+            </div>
+            <div class="box-copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2021</p>
+            <p>© ImaginaLiss</p>
+            </div>
+        </div>
+
+        
+        <div class="box-copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2021</p>
+            <p>© ImaginaLiss</p>
+        </div>
+    </footer>
+    <!--FIN:FOOTER-->
+    <script src="../Js/api2.js"></script>
+</body>
+</html>
