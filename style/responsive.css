@@ -48,10 +48,10 @@ img{
     .img1{
         display: none;
     }
-}
-
-/* > = 767px & > = 1024 */
-@media screen and (max-width:768px) and (max-width:1024px){
+  }
+  
+  /* > = 767px & > = 1024 */
+  @media screen and (max-width:768px) and (max-width:1024px){
     body{
         background-color: rgb(220, 217, 20);
     }
@@ -64,7 +64,4 @@ img{
     .img1{
         margin-right: 300px;
     }
-}
-
-
-
+  }
